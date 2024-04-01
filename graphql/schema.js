@@ -17,7 +17,12 @@ type RootMutation{
     createUser(postInput: PostInput): Post!
 }
 
+type RootQuery{
+    hello: String!
+}
+
 schema{
+    query: RootQuery
     mutation: RootMutation
 }
 `);
